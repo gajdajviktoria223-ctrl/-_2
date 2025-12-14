@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Оберіть продукти, які у вас є вдома, і отримайте рецепти." />
+  <meta name="theme-color" content="#CA5310" />
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>Продукти — Що в холодильнику?</title>
+
+  <link rel="canonical" href="ingredients.html" />
+</head>
+<body data-page="ingredients">
+  <a class="skip-link" href="#main">Перейти до основного вмісту</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.html">
+          <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Логотип">
+  <title>Що в холодильнику?</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#FABC75"/>
+      <stop offset="1" stop-color="#BB4D00"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="8" width="36" height="48" rx="10" fill="url(#g)" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="14" y1="30" x2="50" y2="30" stroke="#FFFFFF" stroke-width="3" opacity=".9"/>
+  <circle cx="42" cy="23" r="2.8" fill="#FFFFFF"/>
+  <circle cx="42" cy="38" r="2.8" fill="#FFFFFF"/>
+  <path d="M24 44l5 5 12-14" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+          <span>Що в холодильнику?</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          Меню
+        </button>
+
+        <nav aria-label="Основна навігація">
+          <ul class="nav-menu" id="navMenu" data-open="false">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="ingredients.html" aria-current="page">Продукти</a></li>
+            <li><a href="recipes.html">Рецепти</a></li>
+            <li><a href="about.html">Про сервіс</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+<main id="main">
+  <div class="container">
+    <h1 style="margin-top:0">Що є у вашому холодильнику?</h1>
+    <p class="helper">Відмітьте продукти. Після цього натисніть «Підібрати рецепти».</p>
+
+    <form class="form" id="ingredientsForm" action="recipes.html" method="get" novalidate>
+      <fieldset class="fieldset">
+        <legend>Оберіть інгредієнти</legend>
+        <div class="chips" role="list">
+        <div class="chip">
+          <input id="ing-eggs" type="checkbox" name="ingredient" value="eggs" />
+          <label for="ing-eggs">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-eggs"></use></svg>
+            <span>Яйця</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-milk" type="checkbox" name="ingredient" value="milk" />
+          <label for="ing-milk">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-milk"></use></svg>
+            <span>Молоко</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-tomato" type="checkbox" name="ingredient" value="tomato" />
+          <label for="ing-tomato">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-tomato"></use></svg>
+            <span>Помідори</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-cheese" type="checkbox" name="ingredient" value="cheese" />
+          <label for="ing-cheese">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-cheese"></use></svg>
+            <span>Сир</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-butter" type="checkbox" name="ingredient" value="butter" />
+          <label for="ing-butter">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-butter"></use></svg>
+            <span>Масло</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-onion" type="checkbox" name="ingredient" value="onion" />
+          <label for="ing-onion">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-onion"></use></svg>
+            <span>Цибуля</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-potato" type="checkbox" name="ingredient" value="potato" />
+          <label for="ing-potato">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-potato"></use></svg>
+            <span>Картопля</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-carrot" type="checkbox" name="ingredient" value="carrot" />
+          <label for="ing-carrot">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-carrot"></use></svg>
+            <span>Морква</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-pasta" type="checkbox" name="ingredient" value="pasta" />
+          <label for="ing-pasta">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-pasta"></use></svg>
+            <span>Макарони</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-chicken" type="checkbox" name="ingredient" value="chicken" />
+          <label for="ing-chicken">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-chicken"></use></svg>
+            <span>Курка</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-flour" type="checkbox" name="ingredient" value="flour" />
+          <label for="ing-flour">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-flour"></use></svg>
+            <span>Борошно</span>
+          </label>
+        </div>
+        <div class="chip">
+          <input id="ing-sugar" type="checkbox" name="ingredient" value="sugar" />
+          <label for="ing-sugar">
+            <svg aria-hidden="true" viewBox="0 0 64 64" focusable="false"><use href="#i-sugar"></use></svg>
+            <span>Цукор</span>
+          </label>
+        </div>
+        </div>
+        <p class="helper" style="margin-bottom:0">Підказка: виберіть щонайменше 2–3 продукти для кращих результатів.</p>
+      </fieldset>
+
+      <div class="sticky-actions">
+        <div class="actions-bar" role="region" aria-label="Дії">
+          <span class="badge" aria-live="polite">
+            Обрано: <span id="selectedCount">0</span>
+          </span>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;">
+            <button class="btn btn-secondary" id="resetBtn" type="button">Скинути</button>
+            <button class="btn btn-primary" type="submit">Підібрати рецепти</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <section class="card" style="margin-top:14px" aria-labelledby="uxNotes">
+      <div class="card-body">
+        <h2 id="uxNotes" class="section-title" style="margin-top:0">UX-нотатки</h2>
+        <ul>
+          <li>Картки-інгредієнти мають великі зони натискання (зручно на мобільному).</li>
+          <li>Видимі фокус-стани підтримують навігацію з клавіатури.</li>
+          <li>Лічильник «Обрано» підказує стан системи.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        &copy; 2025 «Що в холодильнику?». Демонстраційний навчальний проєкт.
+        <span class="visually-hidden">Кінець сторінки.</span>
+      </small>
+    </div>
+  </footer>
+  <script src="js/script.js" defer></script>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-eggs" viewBox="0 0 64 64">
+    <path d="M32 10c-10 0-18 13-18 26 0 10 8 18 18 18s18-8 18-18c0-13-8-26-18-26z" fill="#691E06"/>
+  </symbol>
+  <symbol id="i-milk" viewBox="0 0 64 64">
+    <path d="M26 8h12l2 8v40H24V16l2-8z" fill="#691E06"/>
+    <path d="M26 24h14" stroke="#FABC75" stroke-width="4" opacity=".7"/>
+  </symbol>
+  <symbol id="i-tomato" viewBox="0 0 64 64">
+    <path d="M32 18c-12 0-22 8-22 20s10 20 22 20 22-8 22-20-10-20-22-20z" fill="#691E06"/>
+    <path d="M32 18c4-8 10-8 12-8-3 2-4 6-4 10" fill="none" stroke="#FABC75" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-cheese" viewBox="0 0 64 64">
+    <path d="M10 44l44-16v26H10V44z" fill="#691E06"/>
+    <circle cx="28" cy="42" r="3" fill="#FABC75" opacity=".65"/>
+    <circle cx="40" cy="38" r="4" fill="#FABC75" opacity=".65"/>
+  </symbol>
+  <symbol id="i-butter" viewBox="0 0 64 64">
+    <rect x="12" y="28" width="40" height="20" rx="6" fill="#691E06"/>
+    <rect x="18" y="22" width="28" height="10" rx="5" fill="#691E06"/>
+    <path d="M18 38h28" stroke="#FABC75" stroke-width="4" opacity=".6"/>
+  </symbol>
+  <symbol id="i-onion" viewBox="0 0 64 64">
+    <path d="M32 10c-2 6-8 8-8 14 0 4 4 6 8 6s8-2 8-6c0-6-6-8-8-14z" fill="#691E06"/>
+    <path d="M16 30c0 18 7 26 16 26s16-8 16-26c-6 6-10 8-16 8s-10-2-16-8z" fill="#691E06"/>
+  </symbol>
+  <symbol id="i-potato" viewBox="0 0 64 64">
+    <path d="M24 14c10-6 26 2 28 16s-8 28-22 28S10 48 10 34s4-16 14-20z" fill="#691E06"/>
+    <circle cx="26" cy="30" r="2" fill="#FABC75" opacity=".6"/>
+    <circle cx="38" cy="38" r="2" fill="#FABC75" opacity=".6"/>
+  </symbol>
+  <symbol id="i-carrot" viewBox="0 0 64 64">
+    <path d="M32 18c10 10 10 24 0 36-10-12-10-26 0-36z" fill="#691E06"/>
+    <path d="M32 18c-6-6-10-6-14-6 4 4 6 8 6 12" fill="none" stroke="#FABC75" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-pasta" viewBox="0 0 64 64">
+    <path d="M18 18c0 18 0 18 0 36" stroke="#691E06" stroke-width="6" stroke-linecap="round"/>
+    <path d="M32 18c0 18 0 18 0 36" stroke="#691E06" stroke-width="6" stroke-linecap="round"/>
+    <path d="M46 18c0 18 0 18 0 36" stroke="#691E06" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-chicken" viewBox="0 0 64 64">
+    <path d="M18 34c0-10 10-18 22-18 10 0 18 7 18 16 0 9-7 16-16 16-5 0-8-2-10-4-2 8-14 10-18 2 4-2 6-6 4-12z" fill="#691E06"/>
+  </symbol>
+  <symbol id="i-flour" viewBox="0 0 64 64">
+    <path d="M22 10h20l6 10v34H16V20l6-10z" fill="#691E06"/>
+    <path d="M22 26h20" stroke="#FABC75" stroke-width="4" opacity=".7"/>
+  </symbol>
+  <symbol id="i-sugar" viewBox="0 0 64 64">
+    <path d="M20 18h24l8 10-8 28H20l-8-28 8-10z" fill="#691E06"/>
+    <circle cx="30" cy="36" r="2" fill="#FABC75" opacity=".6"/>
+    <circle cx="38" cy="42" r="2" fill="#FABC75" opacity=".6"/>
+  </symbol>
+</svg>
+</body>
+</html>
